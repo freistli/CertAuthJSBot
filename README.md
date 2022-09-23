@@ -2,7 +2,16 @@
 
 Bot Framework v4 bot authentication sample, multiple turns prompts working in WebBot channel, Teams Channel, Bot Emulator. 
 
-Cert Bot Auth logics are in https://github.com/freistli/CertAuthJSBot/blob/main/MyServiceClientCredentialsFactory.js, to verify claims from clients check https://github.com/freistli/CertAuthJSBot/blob/main/MyBotFrameworkAuthentication.js 
+Cert Bot Auth logics are in https://github.com/freistli/CertAuthJSBot/blob/main/MyServiceClientCredentialsFactory.js, 
+
+![image](https://user-images.githubusercontent.com/8623897/191971918-745654a9-e8a8-4d1d-b36e-90a16e5778de.png)
+
+
+To verify claims from clients check https://github.com/freistli/CertAuthJSBot/blob/main/MyBotFrameworkAuthentication.js 
+
+
+![image](https://user-images.githubusercontent.com/8623897/191972014-1add3a7e-646f-4981-90c2-e79b549e979c.png)
+
 
 The bot app use Certificate to do Bot App Auth. The test certificate can be self-signed. To create self-signed certificate:
 
@@ -18,6 +27,9 @@ And then follow this [article](https://helpcenter.gsx.com/hc/en-us/articles/1150
 Don'f forget to upload the self signed certificate to the AAD registered app.
 
 This bot has been created using [Bot Framework](https://dev.botframework.com), it shows how to use authentication in your bot using OAuth too. To set it up, check https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/46.teams-auth 
+
+![image](https://user-images.githubusercontent.com/8623897/191971634-92383393-96f8-400c-ac87-991d4d34f00d.png)
+
 
 The sample uses the bot authentication capabilities in [Azure Bot Service](https://docs.botframework.com), providing features to make it easier to develop a bot that authenticates users to various identity providers such as Azure AD (Azure Active Directory), GitHub, Uber, etc.
  
