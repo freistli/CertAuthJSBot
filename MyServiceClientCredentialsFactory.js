@@ -10,7 +10,7 @@ class MyServiceClientCredentialsFactory extends ServiceClientCredentialsFactory
     constructor() {
         super();        
         this.certKey = fs.readFileSync('c:/temp/selfsign.key').toString();
-        this.thumbPrint = 'bbaf6096f747c9da6ee27ccf996d668a336b0970';
+        this.thumbPrint = '<cert thumbprint>';
       }
 
       /**
