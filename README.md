@@ -22,13 +22,13 @@ NOTE: Microsoft Teams currently differs slightly in the way auth is integrated w
 - Clone the repository
 
     ```bash
-    git clone https://github.com/Microsoft/botbuilder-samples.git
+    git clone https://github.com/freistli/CertAuthJSBot.git
     ```
 
 - In a console, navigate to `samples/javascript_nodejs/18.bot-authentication`
 
     ```bash
-    cd samples/javascript_nodejs/18.bot-authentication
+    cd CertAuthJSBot
     ```
 
 - Install modules
