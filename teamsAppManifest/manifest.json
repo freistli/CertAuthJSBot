@@ -1,0 +1,60 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.14/MicrosoftTeams.schema.json",
+  "version": "1.0.0",
+  "manifestVersion": "1.14",
+  "id": "<Teams App ID>",
+  "packageName": "com.package.name",
+  "name": {
+    "short": "TeamsCertAuthBot",
+    "full": ""
+  },
+  "developer": {
+    "name": "Contoso Developer",
+    "mpnId": "",
+    "websiteUrl": "https://www.contoso.com",
+    "privacyUrl": "https://www.contoso.com/privacy",
+    "termsOfUseUrl": "https://www.contoso.com/termsofuse"
+  },
+  "description": {
+    "short": "Bot App verifies multiple Auth scenarios",
+    "full": "Bot App Auth uses Certificate, User OAuth supports Teams Channel, Web Channel"
+  },
+  "icons": {
+    "outline": "outline.png",
+    "color": "color.png"
+  },
+  "accentColor": "#FFFFFF",
+  "staticTabs": [
+    {
+      "entityId": "conversations",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "about",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "bots": [
+    {
+      "botId": "<Bot App ID>",
+      "scopes": [
+        "personal",
+        "team",
+        "groupchat"
+      ],
+      "isNotificationOnly": false,
+      "supportsCalling": false,
+      "supportsVideo": false,
+      "supportsFiles": true
+    }
+  ],
+  "validDomains": [],
+  "webApplicationInfo": {
+    "id": "<Bot App ID>",
+    "resource": ""
+  }
+}
