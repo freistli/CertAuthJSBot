@@ -13,6 +13,8 @@ Export-PfxCertificate -Cert $cert -FilePath "C:\temp\selfsign.pfx" -Password $my
 
 And then follow this [article](https://helpcenter.gsx.com/hc/en-us/articles/115015887447-Extracting-Certificate-crt-and-PrivateKey-key-from-a-Certificate-pfx-File#:~:text=Creating%20your%20privateKey.key%20file%3A%201%20Return%20to%20the,new%20Notepad%20file%20extension%20to%20.key.%20More%20items)  to get private key file to use in https://github.com/freistli/CertAuthJSBot/blob/main/MyServiceClientCredentialsFactory.js
 
+Don'f forget to upload the self signed certificate to the AAD registered app.
+
 This bot has been created using [Bot Framework](https://dev.botframework.com), it shows how to use authentication in your bot using OAuth too. To set it up, check https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/46.teams-auth 
 
 The sample uses the bot authentication capabilities in [Azure Bot Service](https://docs.botframework.com), providing features to make it easier to develop a bot that authenticates users to various identity providers such as Azure AD (Azure Active Directory), GitHub, Uber, etc.
