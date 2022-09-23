@@ -1,12 +1,22 @@
 # Bot Authentication
 
-Bot Framework v4 bot authentication sample
+Bot Framework v4 bot authentication sample, multiple turns prompts working in WebBot channel, Teams Channel, Bot Emulator. Cert Bot Auth logics are in https://github.com/freistli/CertAuthJSBot/blob/main/MyServiceClientCredentialsFactory.js, to verify claims from clients check https://github.com/freistli/CertAuthJSBot/blob/main/MyBotFrameworkAuthentication.js 
 
-This bot has been created using [Bot Framework](https://dev.botframework.com), it shows how to use authentication in your bot using OAuth.
+The bot app use Certificate to do Bot App Auth. The test certificate can be self-signed. To create self-signed certificate:
+
+  ```bash
+$cert=New-SelfSignedCertificate -Subject "CN=flbutauth" -CertStoreLocation "Cert:\CurrentUser\My"  -KeyExportPolicy Exportable -KeySpec Signature
+Export-Certificate -Cert $cert -FilePath "C:\temp\selfsign.cer"  
+$mypwd = ConvertTo-SecureString -String "<your password>" -Force -AsPlainText
+Export-PfxCertificate -Cert $cert -FilePath "C:\temp\selfsign.pfx" -Password $mypwd
+```
+
+And then follow this [article](https://helpcenter.gsx.com/hc/en-us/articles/115015887447-Extracting-Certificate-crt-and-PrivateKey-key-from-a-Certificate-pfx-File#:~:text=Creating%20your%20privateKey.key%20file%3A%201%20Return%20to%20the,new%20Notepad%20file%20extension%20to%20.key.%20More%20items)  to get private key file to use in https://github.com/freistli/CertAuthJSBot/blob/main/MyServiceClientCredentialsFactory.js
+
+This bot has been created using [Bot Framework](https://dev.botframework.com), it shows how to use authentication in your bot using OAuth too. To set it up, check https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/46.teams-auth 
 
 The sample uses the bot authentication capabilities in [Azure Bot Service](https://docs.botframework.com), providing features to make it easier to develop a bot that authenticates users to various identity providers such as Azure AD (Azure Active Directory), GitHub, Uber, etc.
-
-NOTE: Microsoft Teams currently differs slightly in the way auth is integrated with the bot. Refer to sample 46.teams-auth.
+ 
 
 ## Prerequisites
 
