@@ -1,6 +1,8 @@
 # Bot Authentication
 
-Bot Framework v4 bot authentication sample, multiple turns prompts working in WebBot channel, Teams Channel, Bot Emulator. Cert Bot Auth logics are in https://github.com/freistli/CertAuthJSBot/blob/main/MyServiceClientCredentialsFactory.js, to verify claims from clients check https://github.com/freistli/CertAuthJSBot/blob/main/MyBotFrameworkAuthentication.js 
+Bot Framework v4 bot authentication sample, multiple turns prompts working in WebBot channel, Teams Channel, Bot Emulator. 
+
+Cert Bot Auth logics are in https://github.com/freistli/CertAuthJSBot/blob/main/MyServiceClientCredentialsFactory.js, to verify claims from clients check https://github.com/freistli/CertAuthJSBot/blob/main/MyBotFrameworkAuthentication.js 
 
 The bot app use Certificate to do Bot App Auth. The test certificate can be self-signed. To create self-signed certificate:
 
