@@ -1,14 +1,12 @@
 # Bot Authentication
 
-Bot Framework v4 bot authentication sample, multiple turns prompts working in WebBot channel, Teams Channel, Bot Emulator. 
+This is a Bot Framework v4 bot authentication sample, shows how to enable Bot App to use certificate to perform bot auth, check token claims in bot cummunication，also includes multiple turns prompts working in WebBot channel, Teams Channel, Bot Emulator. 
 
-Cert Bot Auth logics are in https://github.com/freistli/CertAuthJSBot/blob/main/MyServiceClientCredentialsFactory.js, 
+Cert Bot Auth logic is in https://github.com/freistli/CertAuthJSBot/blob/main/MyServiceClientCredentialsFactory.js, 
 
 ![image](https://user-images.githubusercontent.com/8623897/191971918-745654a9-e8a8-4d1d-b36e-90a16e5778de.png)
 
-
 To verify claims from clients check https://github.com/freistli/CertAuthJSBot/blob/main/MyBotFrameworkAuthentication.js 
-
 
 ![image](https://user-images.githubusercontent.com/8623897/191972014-1add3a7e-646f-4981-90c2-e79b549e979c.png)
 
@@ -31,8 +29,7 @@ This bot has been created using [Bot Framework](https://dev.botframework.com), i
 ![image](https://user-images.githubusercontent.com/8623897/191971634-92383393-96f8-400c-ac87-991d4d34f00d.png)
 
 
-The sample uses the bot authentication capabilities in [Azure Bot Service](https://docs.botframework.com), providing features to make it easier to develop a bot that authenticates users to various identity providers such as Azure AD (Azure Active Directory), GitHub, Uber, etc.
- 
+The sample uses the bot authentication capabilities in [Azure Bot Service](https://docs.botframework.com), providing features to make it easier to develop a bot that authenticates users to various identity providers such as Azure AD (Azure Active Directory), GitHub, Uber, etc. 
 
 ## Prerequisites
 
