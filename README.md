@@ -48,7 +48,7 @@ The sample uses the bot authentication capabilities in [Azure Bot Service](https
     git clone https://github.com/freistli/CertAuthJSBot.git
     ```
 
-- In a console, navigate to `samples/javascript_nodejs/18.bot-authentication`
+- In a console, navigate to `CertAuthJSBot`
 
     ```bash
     cd CertAuthJSBot
